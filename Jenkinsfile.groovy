@@ -19,7 +19,7 @@ pipeline {
                 
                 //def name = currentBuild.agent.name
                 
-                // echo "Building... ${currentBuild.agent.workspace}"
+                echo "Building... ${currentBuild.agent.name}"
                 }
             }
         }
