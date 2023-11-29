@@ -9,8 +9,10 @@ pipeline {
                 script {
                 def builnum = currentBuild.number
                 
-                echo "Building...${builnum}"
+                echo "Building...${env.Build_ID}"
                 
+                bash ./cli_script.py
+
                 //def displayname = currentBuild.currentExecutor.displayName
                 //def num = currentBuild.currentExecutor.number
                 //echo "Excutor information is  ${displayname} and ${num}"
