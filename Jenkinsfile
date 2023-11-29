@@ -29,9 +29,9 @@ pipeline {
                     
                     // Create the virtual environment
                     sh "python3 -m venv ${venvDir}"
-                    
+                    sh "cd ${venvDir}"
                     // Activate the virtual environment
-                    sh "source ${venvDir}/bin/activate"
+                    sh "source /bin/activate"
                     
                     // Install dependencies or run Python scripts within the virtual environment
                     // sh "pip install -r requirements.txt"
