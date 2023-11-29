@@ -32,14 +32,14 @@ pipeline {
                     sh "cd ${venvDir}"
                     // Activate the virtual environment
 
-                    sh "pipenv --version"
-                    sh "pipenv install"
+                    sh "pip3 freeze"
+                    // sh "pipenv install"
 
-                    // sh "source /bin/activate"
+                    // // sh "source /bin/activate"
                     
-                    // Install dependencies or run Python scripts within the virtual environment
-                    // sh "pip install -r requirements.txt"
-                    sh "pipenv run python3 ../cli_script.py"
+                    // // Install dependencies or run Python scripts within the virtual environment
+                    // // sh "pip install -r requirements.txt"
+                    // sh "pipenv run python3 ../cli_script.py"
                     
                     // // Deactivate the virtual environment
                     // sh "deactivate"
