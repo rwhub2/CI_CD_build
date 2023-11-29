@@ -11,7 +11,7 @@ pipeline {
                 
                 echo "Building...${env.Build_ID}"
                 
-                bash ./cli_script.py
+                python3 cli_script.py
 
                 //def displayname = currentBuild.currentExecutor.displayName
                 //def num = currentBuild.currentExecutor.number
