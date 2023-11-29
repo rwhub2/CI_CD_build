@@ -10,18 +10,17 @@ pipeline {
                 def builnum = currentBuild.number
                 
                 echo "Building...${env.Build_ID}"
-                
-                bash 'python3 cli_script.py'
+                echo "Building... ${env.NODE_NAME}"
+                echo "Executing the python build"
+                sh 'python3 cli_script.py'
 
                 //def displayname = currentBuild.currentExecutor.displayName
                 //def num = currentBuild.currentExecutor.number
                 //echo "Excutor information is  ${displayname} and ${num}"
                 
-                echo "doing build stuff..."
-                
                 //def name = currentBuild.agent.name
                 
-                echo "Building... ${env.NODE_NAME}"
+
                 }
             }
         }
