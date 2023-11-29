@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    // {
-    //     label 'rw_ubuntu'
-    // }
+    {
+        label 'rw_ubuntu'
+    }
     stages {
         stage('Build') {
             steps {
