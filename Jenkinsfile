@@ -28,11 +28,14 @@ pipeline {
                     def venvDir = "${WORKSPACE}/test_venv"
                     
                     // Create the virtual environment
-                    sh "python3 -m venv ${venvDir}"
-                    sh "cd ${venvDir}"
+                    // sh "python3 -m venv ${venvDir}"
+                    // sh "cd ${venvDir}"
                     // Activate the virtual environment
 
-                    sh "pip3 freeze"
+                    sh "bash --version"
+                    sh "bash python3 cli_script.py"
+
+                    // sh "pip3 freeze"
                     // sh "pipenv install"
 
                     // // sh "source /bin/activate"
