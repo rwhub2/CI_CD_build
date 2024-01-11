@@ -5,12 +5,14 @@ pipeline {
     }
     stages {
         stage('Clean Workspace') {
-            script {                
-                cleanWs()
+            steps {
+                script {                
+                    cleanWs()
+                }
+
             }
-
         }
-
+        
         stage('Set up Environment')    
             steps {
                  script {
