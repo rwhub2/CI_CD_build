@@ -35,7 +35,9 @@ pipeline {
                     sh "bash --version"
                     sh "python3 -V"
                     sh "pwd"
-                    
+
+                    sh 'python3 cli_script.py' 
+
                     // sh "bash python3 cli_script.py"
 
                     // sh "pip3 freeze"
