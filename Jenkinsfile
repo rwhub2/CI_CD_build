@@ -31,9 +31,11 @@ pipeline {
                     sh "python3 -V"
                     sh "pwd"
 
-                    sh 'python3 -m venv test_venv_2'
+                    sh 'python3 -m venv test_venv'
 
                     sh 'cd test_venv && ls' 
+
+                    delete dir: 'test_venv_2'
 
                     // sh 'python3 cli_script.py' 
 
