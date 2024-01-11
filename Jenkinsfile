@@ -31,11 +31,14 @@ pipeline {
                     sh "python3 -V"
                     sh "pwd"
 
-                    // sh 'python3 -m venv test_venv'
+                    sh 'python3 -m venv test_venv'
 
-                    // sh 'cd test_venv && ls' 
+                    sh 'cd test_venv' 
 
-                    sh 'rm -r test_venv_2'
+                    sh 'source bin/activate'
+
+                    sh 'pwd'
+
                     sh 'rm -r test_venv'
 
                     // sh 'python3 cli_script.py' 
