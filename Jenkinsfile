@@ -35,11 +35,11 @@ pipeline {
 
                     sh "echo ${venvDir}" 
 
-                    // sh "source test_venv/bin/activate"
+                    sh "source ${venvDir}/bin/activate"
 
-                    sh 'pwd'
+                    // sh 'pwd'
 
-                    sh 'pip list'
+                    // sh 'pip list'
 
 
                     // sh 'terraform --version'
