@@ -33,7 +33,7 @@ pipeline {
                     // Activate the virtual environment
 
                     sh "bash --version"
-                    sh "echo ${venvDir}"
+                    sh "bash python3 -V"
                     sh "pwd"
                     // sh "bash python3 cli_script.py"
 
