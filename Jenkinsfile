@@ -33,7 +33,9 @@ pipeline {
                     // Activate the virtual environment
 
                     sh "bash --version"
-                    sh "bash python3 cli_script.py"
+                    sh "echo ${venvDir}"
+                    sh "pwd"
+                    // sh "bash python3 cli_script.py"
 
                     // sh "pip3 freeze"
                     // sh "pipenv install"
