@@ -40,6 +40,10 @@ pipeline {
 
                     sh "terraform init"
 
+                    sh "terraform plan"
+
+                    sh "terraform apply"
+
                     // sh 'pwd'
 
                     // sh 'pip list'
