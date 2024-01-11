@@ -33,13 +33,16 @@ pipeline {
 
                     // sh 'python3 -m venv test_venv'
 
-                    sh 'cd test_venv' 
+                    sh 'echo ${venvDir}' 
 
                     // sh "source test_venv/bin/activate"
 
                     sh 'pwd'
 
                     sh 'pip list'
+
+
+                    sh 'terraform --version'
 
                     // sh 'rm -r test_venv'
 
