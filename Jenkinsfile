@@ -6,8 +6,10 @@ pipeline {
     stages {
         stage('Clean Workspace') {
             steps {
-                script {                
-                    cleanWs()
+                script {        
+                    sh 'echo this is the workspace'
+                    sh 'pwd'        
+                    // cleanWs()
                 }
 
             }
