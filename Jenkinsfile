@@ -35,7 +35,10 @@ pipeline {
 
                     sh "echo ${venvDir}" 
 
-                    sh "source ${venvDir}/bin/activate"
+                    // sh "source ${venvDir}/bin/activate"
+
+
+                    sh "terraform init"
 
                     // sh 'pwd'
 
