@@ -12,8 +12,8 @@ pipeline {
 
             }
         }
-        
-        stage('Set up Environment')    
+
+        stage('Set up Environment'){    
             steps {
                  script {
                     // Define the virtual environment directory within the workspace
@@ -50,8 +50,8 @@ pipeline {
                     // sh "deactivate"
                 }
             }
-    }
-        
+        }
+    }     
 
         
 }
