@@ -37,7 +37,7 @@ pipeline {
                     sh "python3 -V"
                     sh "pwd"
 
-                    sh 'python3 -m venv test_venv'
+                    sh 'python3 -m venv test_venv_2'
 
                     sh 'cd test_venv && ls' 
 
