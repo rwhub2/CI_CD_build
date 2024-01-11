@@ -35,7 +35,7 @@ pipeline {
 
                     // sh 'cd test_venv' 
 
-                    sh 'source test_venv/bin/activate'
+                    sh "source test_venv/bin/activate"
 
                     sh 'pwd'
 
