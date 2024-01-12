@@ -32,9 +32,14 @@ pipeline {
 
                     // sh 'python3 -m venv test_venv'
 
-                    sh "cd ${venvDir}" 
+                    dir(${venvDir}) {
 
                     sh "pwd"
+                    sh "touch tt.txt"
+
+                    }
+
+                    sh "pwd"                   
 
                     // sh "source ${venvDir}/bin/activate"
 
