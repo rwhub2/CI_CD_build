@@ -29,20 +29,21 @@ pipeline {
                     sh "bash --version"
 
                     sh "python3 -V"
-                    sh "pwd"
 
                     // sh 'python3 -m venv test_venv'
 
-                    sh "echo ${venvDir}" 
+                    sh "cd ${venvDir}" 
+
+                    sh "pwd"
 
                     // sh "source ${venvDir}/bin/activate"
 
 
-                    sh "terraform init"
+                    // sh "terraform init"
 
-                    sh "terraform plan"
+                    // sh "terraform plan"
 
-                    sh "terraform apply"
+                    // sh "terraform apply"
 
                     // sh 'pwd'
 
